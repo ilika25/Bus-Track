@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            height: 300px;
+            width: 400px;
+            border: 0.2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+            border-radius: 10px;
+            margin-top: 60px;
+        }
+        label{
+            font-size: 20px;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+<body>
+    <h1 style="margin-top: 200px;">Bus Tracker- Driver Login</h1>
+    <form action="/logindriver" method="POST">
+        <div class="main">
+        <div>
+            <label for="drivername">Drivername:</label>
+            <input type="text" id="drivername" name="drivername" required>
+        </div>
+        <div>
+            <label for="phone">Phone Number:  </label>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+        <div>
+            <label for="busNumber">Bus Number:  </label>
+            <input type="text" id="busnumber" name="busNumber" required>
+        </div>
+        <div>
+            <label for="password">Password:  </label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-info">Login</button>
+        <p>New to OneHelp? <a href="registerdriver">Register Now</a></p>
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            height: 300px;
+            width: 400px;
+            border: 0.2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+            border-radius: 10px;
+            margin-top: 60px;
+        }
+        label{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Registration User- Sign Up</h2>
+    <form action="/registeruser" method="post">
+        <div class="main">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Register</button>
+        </div>
+    </form>
+</body>
+</html>

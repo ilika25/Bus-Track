@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to The Bus Tracker</h1>
+    <h3>To get started, choose the two options: </h3>
+    <button class="driver">LogIn(Driver)</button>
+    <button class="user">LogIn(User)</button>
+    <script>
+        const userbtn= document.querySelector(".user");
+        const driverbtn= document.querySelector(".driver");
+        userbtn.addEventListener("click",()=>{
+            window.location.href="loginuser"
+        })
+        driverbtn.addEventListener("click",()=>{
+            window.location.href="logindriver"
+        })
+    </script>
+</body>
+</html>

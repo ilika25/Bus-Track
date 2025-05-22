@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=h, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marko+One&display=swap" rel="stylesheet">
     <style>
         body{
             display: flex;
@@ -13,9 +16,20 @@
             margin: 0;
             padding: 0;
         }
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid black;
+            width: 100%;
+            height: 100vh;
+            background-color: #abcbeb;
+        }
         .main{
-            height: 300px;
-            width: 400px;
+            font-family: 'Marko One', serif;
+            height: 380px;
+            width: 500px;
             border: 0.2px solid black;
             display: flex;
             justify-content: center;
@@ -24,6 +38,7 @@
             gap: 15px;
             border-radius: 10px;
             margin-top: 60px;
+            background-color: #F4F6F8;
         }
         label{
             font-size: 20px;
@@ -32,7 +47,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
 <body>
-    <h1 style="margin-top: 200px;">Bus Tracker- Driver Login</h1>
+    <div class="content">
+    <h1 style=" font-family: 'Marko One',serif;">Bus Tracker- Driver Login</h1>
     <form action="/logindriver" method="POST">
         <div class="main">
         <div>
@@ -40,7 +56,7 @@
             <input type="text" id="drivername" name="drivername" required>
         </div>
         <div>
-            <label for="phone">Phone Number:  </label>
+            <label for="phone">Phone No   :  </label>
             <input type="text" id="phone" name="phone" required>
         </div>
         <div>
@@ -52,9 +68,10 @@
             <input type="password" id="password" name="password" required>
         </div>
         <button type="submit" class="btn btn-info">Login</button>
-        <p>New to OneHelp? <a href="registerdriver">Register Now</a></p>
+        <p>New to BusTracker? <a href="registerdriver">Register Now</a></p>
         </div>
     </form>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
 </body>
